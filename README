@@ -2,4 +2,4 @@
 # FoggyKitchen Hello World
 # -----------------------------
 
-With the OCI DevOps service and this project, you'll be able to build, test and deploy this application to Oracle Container Engine for Kubernetes (OKE) via Helm Charts.
+With the OCI DevOps service and this project, you'll be able to build, test and deploy this application to Oracle Container Engine for Kubernetes (OKE) via K8S manifest files.
