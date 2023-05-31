@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: lb-service
+  labels:
+    app: nginx
+  annotations:
+    oci.oraclecloud.com/load-balancer-type: "lb"
+    service.beta.kubernetes.io/oci-load-balancer-shape: "{{ .Values.loadBalancer.lbShape }}"
+    service.beta.kubernetes.io/oci-load-balancer-shape-flex-min: "{{ .Values.loadBalancer.lbMinShape }}"
+    service.beta.kubernetes.io/oci-load-balancer-shape-flex-max: "{{ .Values.loadBalancer.lbMaxShape }}"
+spec:
+  type: LoadBalancer
+  ports:
+  - port: {{ .Values.loadBalancer.lbListenerPort }}
+  selector:
+    app: nginx
