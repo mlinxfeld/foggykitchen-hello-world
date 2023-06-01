@@ -8,7 +8,7 @@ With the OCI DevOps service and this project, you'll be able to build, test and 
 
 ### Using local docker
 
-If you want to build and test it locally on your own laptop then you should run the commands as follows:
+If you want to build and test it locally on your own laptop or server then you should run the commands as follows:
 
 **STEP1** Clone the repo and go into the cloned directory:
 
