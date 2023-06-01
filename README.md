@@ -136,3 +136,6 @@ e2c778cdfeb0        foggykitchen-hello-world   "/bin/sh -c 'nginx -…"   37 sec
   </body>
 </html>
 ```
+**STEP5.** If server has been exposed to public Internet you can check web browser access:
+
+<img width="1461" alt="image" src="https://github.com/mlinxfeld/foggykitchen-hello-world/assets/44723865/3bc04370-7b65-47bd-b622-ba22e49c7fc9">
