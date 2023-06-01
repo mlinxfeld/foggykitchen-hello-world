@@ -1,3 +1,3 @@
-docker run -p 80:80 \
-           --name foggykitchen-hello-world \
+docker run -d -p 80:80 \
+           --name fkhelloworld \
                    foggykitchen-hello-world 
