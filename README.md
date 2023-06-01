@@ -6,11 +6,11 @@ With the OCI DevOps service and this project, you'll be able to build, test and 
 
 ## How to use code 
 
-# Using local docker
+### Using local docker
 
 If you want to build and test it locally on your own laptop then you should run the commands as follows:
 
-STEP1. Build the image with build.sh script:
+**STEP1.** Build the image with build.sh script:
 
 ```shell
 [opc@myserver foggykitchen-hello-world]$ ./build.sh
@@ -63,7 +63,7 @@ Successfully built a6d63c3cb178
 Successfully tagged foggykitchen-hello-world:latest
 ```
 
-STEP2. Execure run.sh script and check docker processes:
+**STEP2.** Execure run.sh script and check docker processes:
 
 ```shell
 [opc@primaryvnic foggykitchen-hello-world]$ ./run.sh
@@ -72,7 +72,7 @@ STEP2. Execure run.sh script and check docker processes:
 CONTAINER ID        IMAGE                      COMMAND                  CREATED             STATUS              PORTS                NAMES
 e2c778cdfeb0        foggykitchen-hello-world   "/bin/sh -c 'nginx -…"   37 seconds ago      Up 35 seconds       0.0.0.0:80->80/tcp   fk-hello-world
 ```
-STEP3. Access the application with curl:
+**STEP3.** Access the application with curl:
 
 ```shell
 [opc@primaryvnic foggykitchen-hello-world]$ curl localhost
