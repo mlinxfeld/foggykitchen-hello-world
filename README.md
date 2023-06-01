@@ -10,7 +10,20 @@ With the OCI DevOps service and this project, you'll be able to build, test and 
 
 If you want to build and test it locally on your own laptop then you should run the commands as follows:
 
-**STEP1.** Build the image with build.sh script:
+**STEP1** Clone the repo and go into the cloned directory:
+
+```shell
+[opc@myserver opc]$ git clone https://github.com/mlinxfeld/foggykitchen-hello-world
+Cloning into 'foggykitchen-hello-world'...
+remote: Enumerating objects: 57, done.
+remote: Counting objects: 100% (57/57), done.
+remote: Compressing objects: 100% (46/46), done.
+remote: Total 57 (delta 19), reused 42 (delta 9), pack-reused 0
+Unpacking objects: 100% (57/57), done.
+
+[opc@myserver opc]$ cd foggykitchen-hello-world
+```
+**STEP2** Build the image with build.sh script:
 
 ```shell
 [opc@myserver foggykitchen-hello-world]$ ./build.sh
@@ -63,19 +76,19 @@ Successfully built a6d63c3cb178
 Successfully tagged foggykitchen-hello-world:latest
 ```
 
-**STEP2.** Execure run.sh script and check docker processes:
+**STEP3** Execure run.sh script and check docker processes:
 
 ```shell
-[opc@primaryvnic foggykitchen-hello-world]$ ./run.sh
+[opc@myserver foggykitchen-hello-world]$ ./run.sh
 
 [opc@myserver ~]$ docker ps
 CONTAINER ID        IMAGE                      COMMAND                  CREATED             STATUS              PORTS                NAMES
 e2c778cdfeb0        foggykitchen-hello-world   "/bin/sh -c 'nginx -…"   37 seconds ago      Up 35 seconds       0.0.0.0:80->80/tcp   fk-hello-world
 ```
-**STEP3.** Access the application with curl:
+**STEP4** Access the application with curl:
 
 ```shell
-[opc@primaryvnic foggykitchen-hello-world]$ curl localhost
+[opc@myserver foggykitchen-hello-world]$ curl localhost
 <!DOCTYPE html>
 <html>
   <head>
